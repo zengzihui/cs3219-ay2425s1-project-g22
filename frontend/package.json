@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,6 +13,7 @@
     "daisyui": "^4.12.12",
     "jsonwebtoken": "^9.0.2",
     "rc-segmented": "^2.5.0",
+    "lodash.debounce": "^4.0.8",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-chartjs-2": "^5.2.0",

@@ -43,9 +43,11 @@ function MatchedPage({ matchResult }) {
               Rematch
             </button>
           </Link>
-          <button className="btn btn-primary">
-            Start now!
-          </button>
+          <Link to='/room'>
+            <button className="btn btn-primary">
+              Start now!
+            </button>
+          </Link>
         </div>
       </main>
     </div>
