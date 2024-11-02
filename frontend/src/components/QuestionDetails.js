@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getData as getQuestion } from '../services/questionService';
 import { Container, Card, Button } from 'react-bootstrap';
+import ReactMarkdown from 'react-markdown';
 import './QuestionDetails.css'; 
 
 const QuestionDetails = () => {
@@ -39,7 +40,8 @@ const QuestionDetails = () => {
         <Card.Body>
           <Card.Title>{question.title}</Card.Title>
           <Card.Text>
-            <strong>Description: </strong>{question.desc}
+            <strong>Description: </strong>
+            <ReactMarkdown>{question.desc}</ReactMarkdown>
           </Card.Text>
           <Card.Text>
             <strong>Category: </strong>{question.c.join(', ')}

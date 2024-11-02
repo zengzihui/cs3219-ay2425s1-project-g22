@@ -31,10 +31,16 @@ services:
   frontend:
     build: ./frontend
     container_name: frontend
+    volumes:
+      - ./frontend:/react-app
+      - /react-app/node_modules
     ports:
       - "3000:3000"
     networks:
       - peerprep-network
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - CHOKIDAR_INTERVAL=100
 
   kafka:
     image: wurstmeister/kafka:2.13-2.7.0
